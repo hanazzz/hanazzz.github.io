@@ -13,6 +13,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    color: #2f2f2f;
 }
 
 /* NAV BAR */
@@ -86,6 +87,15 @@ p {
     line-height: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    background-color: lavender;
+}
+
 /* INTRO */
 #intro {
     margin-top: 8rem;
@@ -113,6 +123,11 @@ p {
 
 .portfolio-item {
     max-width: 25rem;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
 }
 
 .project-date {
