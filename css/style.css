@@ -1,15 +1,119 @@
+/* BREAKPOINTS */
+/* Small devices (portrait tablets and large phones, 640px and up) */
+/* @media only screen and (min-width: 640px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
 body {
-    font-family: sans-serif;
-    font-size: xx-large;
-    text-align: center;
-    height: 100vh;
-    margin: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* NAV BAR */
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1rem 0;
+}
+
+nav div {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+nav a {
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+    margin: 0 .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    nav a {
+        font-size: 1.25rem;
+        padding: 0.75rem 1rem;
+        margin: 0 1rem;
+    }
+}
+
+/* MAIN CONTENT */
+
+main {
+    margin: 0 1rem 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        margin: 0 8rem 3rem;
+    }
+}
+
+
+h1 {
+    font-size: 6rem;
+    font-weight: 600rem;
+    margin-bottom: .5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 12rem;
+    margin-bottom: .5rem;
+    scroll-margin-top: 6rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+    font-weight: 600;
 }
 
 p {
-    padding: 2rem 0;
-    margin: 0;
+    margin: .5rem auto;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+/* INTRO */
+#intro {
+    margin-top: 8rem;
+}
+
+@media only screen and (min-width: 768px) {
+    #intro {
+        margin-top: 12rem;
+    }
+}
+
+/* PORTFOLIO */
+
+#portfolio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: auto;
+    gap: 2rem 1.25rem;
+}
+
+.portfolio-item {
+    max-width: 25rem;
+}
+
+.project-date {
+    font-style: italic;
+    margin: 0.25rem auto;
 }
