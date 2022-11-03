@@ -6,33 +6,96 @@
         <title>Hanâ Zait</title>
         <meta name="description" content="Hanâ Zait's personal portfolio.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <p>work in progress :)</p>
+        <nav>
+            <div>
+                <a href="">Hanâ Zait</a>
+                <div id="nav-links">
+                    <a href="#about-header">About</a>
+                    <a href="#portfolio-header">Portfolio</a>
+                    <a href="#contact-header">Contact</a>
+                </div>
+            </div>
+        </nav>
 
-        <p>
-            in the meantime, find Hanâ here:
-            <br>
-            <a
-                href="https://github.com/hanazzz/"
-                className="link hover:bg-accent"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                GitHub</a> ||
-            <a
-                href="https://www.linkedin.com/in/hanazait/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                LinkedIn
-            </a>
-        </p>
+        <main>
+            <div id="intro">
+                <h1>Hi, I'm Hanâ.</h1>
+                <p>blah blah software engineer.</p>
+            </div>
 
+            <div id="about">
+                <h2 id="about-header">About</h2>
+                <p>A couple sentences about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam donec adipiscing tristique risus nec feugiat in.</p>
+            </div>
+
+            <div id="portfolio">
+                <h2 id="portfolio-header">Portfolio</h2>
+
+                <div id="portfolio-container">
+
+                    <div class="portfolio-item">
+                        <img src="https://placeholder.pics/svg/300x200" alt="Placeholder img.">
+                        <h3>Project title 1.</h3>
+                        <p class="project-date">Oct 2022</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                        </p>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="https://placeholder.pics/svg/300x200" alt="Placeholder img.">
+                        <h3>Project title 2.</h3>
+                        <p class="project-date">Oct 2022</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla.</p>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="https://placeholder.pics/svg/300x200" alt="Placeholder img.">
+                        <h3>Project title 3.</h3>
+                        <p class="project-date">Oct 2022</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui id ornare arcu odio ut sem nulla pharetra diam. Massa tempor nec feugiat nisl pretium fusce id.</p>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="https://placeholder.pics/svg/300x200" alt="Placeholder img.">
+                        <h3>Project title 4.</h3>
+                        <p class="project-date">Oct 2022</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui id ornare arcu odio ut sem nulla pharetra diam. Massa tempor nec feugiat nisl pretium fusce id.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <h2 id="contact-header">Contact</h2>
+                <div>
+                    <p>
+                        find Hanâ here:
+                        <br>
+                        <a
+                            href="https://www.linkedin.com/in/hanazait/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn</a> ||
+                        <a
+                            href="https://github.com/hanazzz/"
+                            className="link hover:bg-accent"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
