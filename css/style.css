@@ -41,8 +41,6 @@ nav a {
 
 @media only screen and (min-width: 768px) {
     nav a {
-        font-size: 1.25rem;
-        padding: 0.75rem 1rem;
         margin: 0 1rem;
     }
 }
@@ -50,12 +48,12 @@ nav a {
 /* MAIN CONTENT */
 
 main {
-    margin: 0 1rem 3rem;
+    margin: 0 2rem 3rem;
 }
 
 @media only screen and (min-width: 768px) {
     main {
-        margin: 0 8rem 3rem;
+        margin: 0 8rem 6rem;
     }
 }
 
@@ -64,6 +62,7 @@ h1 {
     font-size: 6rem;
     font-weight: 600rem;
     margin-bottom: .5rem;
+    margin-top: 0rem;
 }
 
 h2 {
@@ -94,7 +93,10 @@ p {
 
 @media only screen and (min-width: 768px) {
     #intro {
-        margin-top: 12rem;
+        margin-top: 14rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
