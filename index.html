@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/59746a953b.js" crossorigin="anonymous"></script>
     </head>
@@ -23,11 +24,11 @@
         
         <nav>
             <div>
-                <a href=""><i class="fa-regular fa-folder-open" aria-hidden="true"></i> Hanâ Zait</a>
+                <a id="nav-name" href="">Hanâ Zait</a>
                 <div id="nav-links">
-                    <a href="#about"><i class="fa-regular fa-circle-user" aria-hidden="true"></i> About</a>
-                    <a href="#portfolio"><i class="fa-regular fa-file-code" aria-hidden="true"></i> Portfolio</a>
-                    <a href="#contact"><i class="fa-regular fa-envelope" aria-hidden="true"></i> Contact</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
         </nav>
@@ -52,17 +53,26 @@
                 <div id="portfolio-container">
 
                     <div class="portfolio-item">
-                        <img src="https://placeholder.pics/svg/460x300" alt="Placeholder img.">
+                        <img
+                            src="images/portfolio-bitbuddy.png"
+                            alt="A pet on the BitBuddy website"
+                            width="460"
+                            height="auto">
                         <h3>BitBuddy</h3>
                         <p class="project-date">Oct 2022 ∙ <a href="https://github.com/hanazzz/virtual-pet-app">GitHub</a> ∙ <a href="https://bitbuddy.hanazait.com/">Live</a></p>
                         <p>A virtual pet app inspired by digital pet games from the early/mid 2000s, but with a modern twist: AI.</p>
                     </div>
 
                     <div class="portfolio-item">
-                        <img src="https://placeholder.pics/svg/460x300" alt="Placeholder img.">
+                        <!-- TODO: Get new screenshot -->
+                        <img
+                            src="images/portfolio-space.png"
+                            alt="A terminal window with text from The Spectacular Space Adventure"
+                            width="460"
+                            height="auto">
                         <h3>The Spectacular Space Adventure</h3>
                         <p class="project-date">Jan 2022 ∙ <a href="https://github.com/hanazzz/spectacular-space-adventure">GitHub</a></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla.</p>
+                        <p>A command line game written in Python. Make your way through space as you attempt to meet up with your friend on another planet, only to get sidetracked along the way.</p>
                     </div>
 
                     <div class="portfolio-item">
@@ -90,7 +100,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <i class="fa-brands fa-xl fa=fw fa-linkedin" title="LinkedIn"></i></a> LinkedIn
+                            <i class="fa-brands fa-xl fa-fw fa-linkedin" title="LinkedIn"></i></a> LinkedIn
                         </p><p>
                         <a
                             href="https://github.com/hanazzz/"
@@ -98,7 +108,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <i class="fa-brands fa-xl fa=fw fa-square-github" title="GitHub"></i></a> GitHub
+                            <i class="fa-brands fa-xl fa-fw fa-square-github" title="GitHub"></i></a> GitHub
                     </p>
                 </div>
             </div>
