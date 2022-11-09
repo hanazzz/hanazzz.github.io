@@ -14,7 +14,7 @@
 :root {
     --primary-color: #D0FF42;
     --secondary-color: #FF4271;
-    --accent-color: #E3D8F1;
+    --accent-color: #D8D8F6;
 }
 
 body {
@@ -30,6 +30,7 @@ nav {
     width: 100%;
     background-color: #ffffff;
     padding: 1rem 0;
+    font-family: 'Inconsolata', monospace;
 }
 
 nav div {
@@ -37,7 +38,13 @@ nav div {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 0.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+    nav div {
+        padding: 0 0.25rem;
+    }
 }
 
 nav a {
@@ -54,6 +61,16 @@ nav a {
     }
 }
 
+#nav-name {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    #nav-name {
+        display: inherit;
+    }
+}
+
 /* MAIN CONTENT */
 
 main {
@@ -66,6 +83,9 @@ main {
     }
 }
 
+h1, h2, h3 {
+    font-family: 'Inconsolata', monospace;
+}
 
 h1 {
     font-size: 6rem;
@@ -132,23 +152,26 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-basis: auto;
-    gap: 2rem 1.25rem;
+    gap: 2rem 2rem;
+    margin: 0.875rem auto;
 }
 
 .portfolio-item {
-    max-width: 25rem;
+    max-width: 22rem;
 }
 
 .portfolio-item img {
     max-width: 100%;
     height: auto;
+    border: #848484 solid 1px;
 }
 
 .portfolio-item p {
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 .project-date {
+    font-size: 1.25rem !important;
     font-style: italic;
     margin: 0.25rem auto;
 }
