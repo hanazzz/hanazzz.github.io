@@ -11,6 +11,12 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...} */
 
+:root {
+    --primary-color: #D0FF42;
+    --secondary-color: #FF4271;
+    --accent-color: #E3D8F1;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #2f2f2f;
@@ -38,6 +44,8 @@ nav a {
     font-size: 1.25rem;
     padding: 0.75rem 1rem;
     margin: 0 .5rem;
+    background-color: inherit;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -72,6 +80,9 @@ h2 {
     margin-top: 12rem;
     margin-bottom: .5rem;
     scroll-margin-top: 6rem;
+    padding: 0 0.5rem;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--primary-color) 50%);
+    display: inline-block;
 }
 
 h3 {
@@ -90,10 +101,13 @@ p {
 a {
     text-decoration: none;
     color: inherit;
+    text-decoration: underline var(--secondary-color) wavy;
+    text-underline-offset: 4px;
+    /* background-color: var(--secondary-color); */
 }
 
 a:hover {
-    background-color: lavender;
+    background-color: var(--accent-color);
 }
 
 /* INTRO */
@@ -128,6 +142,10 @@ a:hover {
 .portfolio-item img {
     max-width: 100%;
     height: auto;
+}
+
+.portfolio-item p {
+    font-size: 1.125rem;
 }
 
 .project-date {
