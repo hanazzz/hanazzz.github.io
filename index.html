@@ -37,14 +37,34 @@
             <div id="intro">
                 <div id="intro-text">
                     <h1>Hi, I'm Hanâ.</h1>
-                    <p>blah blah software engineer.</p>
+                    <p>full-stack software engineer.</p>
                 </div>
-                <img src="https://placeholder.pics/svg/300x450" alt="Placeholder img.">
+                <!-- <img src="https://placeholder.pics/svg/300x450" alt="Placeholder img."> -->
+                <!-- <img
+                    src="images/cli.gif"
+                    alt="Command line interface with the word HELLO being typed"
+                    width="350"
+                    height="auto"> -->
+
             </div>
 
             <div>
                 <h2 id="about">About</h2>
-                <p>A couple sentences about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam donec adipiscing tristique risus nec feugiat in.</p>
+                <ul class="about-items">
+                    <li>I'm a <span class="bold">full-stack software engineer</span> and recently graduated from Hackbright's Software Engineering program.</li>
+                    <li>My eager experimentation with HTML and CSS as a kid was just the start of a life-long interest in technology. (Fortunately my programming skills have improved significantly from those days!) This curiosity led to me to <span class="bold">fall in love with programming last year and pursue a new career in engineering</span>.</li>
+                    <li>I'm currently looking for an <span class="bold">entry-level role</span> as a software engineer (front-end or back-end) or an apprenticeship. </li>
+                    <li>Learn more about me on <a
+                        href="https://www.linkedin.com/in/hanazait/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >LinkedIn</a>.</li>
+                    <li>See what I've been up to on                         <a
+                        href="https://github.com/hanazzz/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >GitHub</a>.</li>
+                </ul>
             </div>
 
             <div>
@@ -60,6 +80,14 @@
                             height="auto">
                         <h3>BitBuddy</h3>
                         <p class="project-date">Oct 2022 ∙ <a href="https://github.com/hanazzz/virtual-pet-app">GitHub</a> ∙ <a href="https://bitbuddy.hanazait.com/">Live</a></p>
+                        <ul class="technologies">
+                            <li>Python</li>
+                            <li>JS</li>
+                            <li>SQL</li>
+                            <li>???</li>
+                            <li>idk</li>
+                        </ul>
+                        <p class="project-short">Full-stack web app.</p>
                         <p>A virtual pet app inspired by digital pet games from the early/mid 2000s, but with a modern twist: AI.</p>
                     </div>
 
@@ -72,7 +100,12 @@
                             height="auto">
                         <h3>The Spectacular Space Adventure</h3>
                         <p class="project-date">Jan 2022 ∙ <a href="https://github.com/hanazzz/spectacular-space-adventure">GitHub</a></p>
-                        <p>A command line game written in Python. Make your way through space as you attempt to meet up with your friend on another planet, only to get sidetracked along the way.</p>
+                        <ul class="technologies">
+                            <li>Python</li>
+                            <li>Command line</li>
+                        </ul>
+                        <p class="project-short">Command line game written in Python.</p>
+                        <p>Make your way through space as you attempt to meet up with your friend on another planet.</p>
                     </div>
 
                     <div class="portfolio-item">
@@ -100,16 +133,41 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <i class="fa-brands fa-xl fa-fw fa-linkedin" title="LinkedIn"></i></a> LinkedIn
-                        </p><p>
+                            <i class="fa-brands fa-xl fa-fw fa-linkedin-in" title="LinkedIn"></i></a> LinkedIn
+                        </p>
+                    <p>
                         <a
                             href="https://github.com/hanazzz/"
-                            className="link hover:bg-accent"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <i class="fa-brands fa-xl fa-fw fa-square-github" title="GitHub"></i></a> GitHub
+                            <i class="fa-brands fa-xl fa-fw fa-github" title="GitHub"></i></a> GitHub
                     </p>
+                    <p>
+                        <a href=""
+                        >
+                            <i class="fa-regular fa-xl fa-fw fa-envelope"></i></a>
+                            Email
+                    </p>
+                    <form>
+                        <label for="name">
+                            Name
+                            <input id="name" name="name" type="text">
+                        </label>
+                        <label for="email">
+                            Email
+                            <input id="email" name="email" type="email">
+                        </label>
+                        <label for="subject">
+                            Subject
+                            <input id="subject" name="subject" type="text">
+                        </label>
+                        <label for="message">
+                            Message
+                            <textarea id="message" name="message"></textarea>
+                        </label>
+                        <input type="submit">
+                    </form>
                 </div>
             </div>
         </main>
