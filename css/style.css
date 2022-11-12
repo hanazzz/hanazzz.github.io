@@ -15,7 +15,12 @@
     --primary-color: #D0FF42;
     --secondary-color: #FF4271;
     --accent-color: #D8D8F6;
-    --dark-text: #2f2f2f;
+    --accent-color-darker: #c4c4f0;
+    --main-text: #2f2f2f;
+    --secondary-text: #fff;
+    --accent-text: #2f2f2f;
+    --background-color: #fff;
+    --border-color: #949494;
 }
 
 html {
@@ -31,7 +36,8 @@ html {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    color: #2f2f2f;
+    background-color: var(--background-color);
+    color: var(--main-text);
 }
 
 /* NAV BAR */
@@ -40,7 +46,7 @@ nav {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--background-color);
     padding: 1rem 0;
     font-family: 'Inconsolata', monospace;
 }
@@ -76,8 +82,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--accent-color);
-    text-decoration: none;
+    color: var(--accent-text);
+    text-decoration: underline var(--secondary-color) wavy;
 }
 
 #nav-name {
@@ -234,7 +240,7 @@ ul.about-items {
 .portfolio-item img {
     max-width: 100%;
     height: auto;
-    border: #848484 solid 1px;
+    border: var(--border-color) solid 1px;
 }
 
 .portfolio-item p {
@@ -258,14 +264,14 @@ ul.technologies {
     display: inline-block;
     list-style: none;
     background-color: var(--accent-color);
+    color: var(--accent-text);
     padding: .25rem;
     margin: .25rem;
     transition: 0.3s;
 }
 
 .technologies li:hover {
-    background-color: var(--secondary-color);
-    color: #fff
+    background-color: var(--accent-color-darker);
 }
 
 /* CONTACT FORM */
@@ -294,23 +300,24 @@ input, textarea {
     display: block;
     padding: .25rem;
     margin: .25rem 0;
-    border: 1px solid #949494;
-    border-radius: .125rem;
+    border: 1px solid var(--border-color);
+    /* border-radius: .125rem; */
 }
 
 input[type=submit] {
     background-color: var(--accent-color);
-    color: var(--dark-text);
+    color: var(--accent-text);
+    border: none;
     width: fit-content;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: .5rem;
+    padding: .5rem .75rem;
     transition: 0.5s;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: var(--primary-color);
+    background-color: var(--accent-color-darker);
 }
 
 textarea {
