@@ -17,6 +17,17 @@
     --accent-color: #D8D8F6;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Disable smooth scrolling when users have prefers-reduced-motion enabled */
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #2f2f2f;
@@ -47,18 +58,25 @@ nav div {
     }
 }
 
+/* NAV LINKS */
 nav a {
     font-size: 1.25rem;
     padding: 0.75rem 1rem;
     margin: 0 .5rem;
     background-color: inherit;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 @media only screen and (min-width: 768px) {
     nav a {
         margin: 0 1rem;
     }
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    text-decoration: none;
 }
 
 #nav-name {
@@ -97,12 +115,18 @@ h1 {
 h2 {
     font-size: 3rem;
     font-weight: 700;
-    margin-top: 12rem;
+    margin-top: 6rem;
     margin-bottom: .5rem;
     scroll-margin-top: 6rem;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--primary-color) 50%);
     display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        margin-top: 12rem;
+    }
 }
 
 h3 {
@@ -118,21 +142,28 @@ p {
     line-height: 1.5rem;
 }
 
+.bold {
+    font-weight: 600;
+}
+
+/* LINKS */
 a {
-    text-decoration: none;
     color: inherit;
     text-decoration: underline var(--secondary-color) wavy;
+    -webkit-text-decoration: underline var(--secondary-color) wavy;
     text-underline-offset: 4px;
-    /* background-color: var(--secondary-color); */
+    transition: 0.5s;
 }
 
 a:hover {
-    background-color: var(--accent-color);
+    text-decoration: underline var(--accent-color) wavy;
+    -webkit-text-decoration: underline var(--accent-color) wavy;
+
 }
 
 /* INTRO */
 #intro {
-    margin-top: 8rem;
+    margin-top: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -141,7 +172,37 @@ a:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 3rem;
     }
+}
+
+#intro img {
+    margin: 1rem auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    #intro img {
+        margin: 0 auto;
+    }
+}
+
+/* ABOUT */
+ul.about-items {
+    list-style: none;
+    padding-left: 2rem;
+}
+
+.about-items li:before  {
+    content: '\2055';
+    padding-right: 8px;
+}
+
+.about-items li {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
 }
 
 /* PORTFOLIO */
@@ -174,4 +235,49 @@ a:hover {
     font-size: 1.25rem !important;
     font-style: italic;
     margin: 0.25rem auto;
+}
+
+ul.technologies {
+    display: inline-block;
+    list-style: none;
+    margin: .5rem 0 0 0;
+    padding: 0;
+}
+
+.technologies li {
+    display: inline-block;
+    list-style: none;
+    background-color: var(--accent-color);
+    padding: .25rem;
+    margin: .25rem;
+    transition: 0.3s;
+}
+
+.technologies li:hover {
+    background-color: var(--secondary-color);
+    color: #fff
+}
+
+/* CONTACT FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+input, textarea {
+    display: block;
+    padding: .25rem;
+    margin: .25rem 0;
+}
+
+textarea {
+    font-size: 1.25rem;
+    width: 100%;
 }
