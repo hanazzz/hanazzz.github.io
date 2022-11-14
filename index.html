@@ -8,6 +8,11 @@
         <title>HANÂ ZAIT</title>
         <meta name="title" content="HANÂ ZAIT || Software Engineer">
         <meta name="description" content="My name is Hanâ Zait and I'm a full-stack software engineer.">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
@@ -35,6 +40,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/59746a953b.js" crossorigin="anonymous"></script>
+
+        <!-- EmailJS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init('hTbonSWiogyDzNWPv');
+            })();
+        </script>
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -60,7 +74,7 @@
                 </div>
                 <!-- <img src="https://placeholder.pics/svg/300x450" alt="Placeholder img."> -->
                 <!-- <img
-                    src="images/cli.gif"
+                    src="images/cli-hello2.gif"
                     alt="Command line interface with the word HELLO being typed"
                     width="350"
                     height="auto"> -->
@@ -70,9 +84,9 @@
             <div>
                 <h2 id="about">About</h2>
                 <ul class="about-items">
-                    <li>I'm a <span class="bold">full-stack software engineer</span> and recently graduated from Hackbright's Software Engineering program.</li>
-                    <li>My eager experimentation with HTML and CSS as a kid was just the start of a life-long interest in technology. (Fortunately my programming skills have improved significantly from those days!) This curiosity led to me to <span class="bold">fall in love with programming last year and pursue a new career in engineering</span>.</li>
-                    <li>I'm currently looking for an <span class="bold">entry-level role</span> as a software engineer (front-end or back-end) or an apprenticeship. </li>
+                    <li>I'm a <span class="bold">full-stack software engineer</span></li>
+                    <li>I recently graduated from Hackbright Academy's Software Engineering program.</li>
+                    <li>I'm currently looking for an <span class="bold">entry-level role</span> as a software engineer or an <span class="bold">apprenticeship</span>.</li>
                     <li>Learn more about me on <a
                         href="https://www.linkedin.com/in/hanazait/"
                         target="_blank"
@@ -145,31 +159,15 @@
             <div>
                 <h2 id="contact">Contact</h2>
                 <div>
-                    <p>
-                        <a
-                            href="https://www.linkedin.com/in/hanazait/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i class="fa-brands fa-xl fa-fw fa-linkedin-in icon-link" title="LinkedIn"></i></a>
-                        <a
-                            href="https://github.com/hanazzz/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i class="fa-brands fa-xl fa-fw fa-github icon-link" title="GitHub"></i></a>
-                        <a href=""
-                        >
-                            <i class="fa-regular fa-xl fa-fw fa-envelope icon-link" title="Email"></i></a>
-                    </p>
-                    <form>
-                        <label for="name">
+                    <form id="contact-form">
+                        <p id="contact-confirmation" class="hidden"></p>
+                        <label for="user_name">
                             Name
-                            <input id="name" name="name" type="text" required>
+                            <input id="user_name" name="user_name" type="text" required>
                         </label>
-                        <label for="email">
+                        <label for="user_email">
                             Email
-                            <input id="email" name="email" type="email" required>
+                            <input id="user_email" name="user_email" type="email" required>
                         </label>
                         <label for="subject">
                             Subject
@@ -179,10 +177,25 @@
                             Message
                             <textarea id="message" name="message" rows="6" required></textarea>
                         </label>
-                        <input type="submit">
+                        <input type="submit" value="Email me!">
                     </form>
                 </div>
             </div>
         </main>
+        <footer>
+            <a
+            href="https://github.com/hanazzz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+                <i class="fa-brands fa-xl fa-fw fa-github icon-link" title="GitHub"></i></a>
+
+            <a
+                href="https://www.linkedin.com/in/hanazait/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fa-brands fa-xl fa-fw fa-linkedin-in icon-link" title="LinkedIn"></i></a>
+        </footer>
     </body>
 </html>
