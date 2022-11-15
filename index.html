@@ -48,7 +48,7 @@
                 emailjs.init('hTbonSWiogyDzNWPv');
             })();
         </script>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="script.js" defer></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -69,7 +69,8 @@
             <div id="intro">
                 <div id="intro-text">
                     <h1>Hi! I'm <span id="name">Hanâ.</span></h1>
-                    <p>full-stack software engineer.</p>
+                    <p id="intro-blurb">full-stack software engineer.</p>
+                    <button type="button" id="intro-button" class="btn">Say more.</button>
                 </div>
                 <!-- <img src="https://placeholder.pics/svg/300x450" alt="Placeholder img."> -->
                 <!-- <img
@@ -115,9 +116,11 @@
                         <ul class="technologies">
                             <li>Python</li>
                             <li>JS</li>
-                            <li>SQL</li>
-                            <li>???</li>
-                            <li>idk</li>
+                            <li>React</li>
+                            <li>PostgreSQL</li>
+                            <li>SQLAlchemy</li>
+                            <li>Flask</li>
+                            <li>Tailwind CSS</li>
                         </ul>
                         <p class="project-short">Full-stack web app.</p>
                         <p>A virtual pet app inspired by digital pet games from the early/mid 2000s, but with a modern twist: AI.</p>
@@ -186,7 +189,7 @@
                             Message
                             <textarea id="message" name="message" rows="8" required></textarea>
                         </label>
-                        <input type="submit" value="Email me!">
+                        <input type="submit" value="Email me!" class="btn">
                     </form>
                 </div>
             </div>

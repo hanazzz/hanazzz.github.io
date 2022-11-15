@@ -28,3 +28,36 @@ window.onload = function() {
       });
   });
 }
+
+// Button with info about me
+const funFacts = [
+  'full-stack software engineer.',
+  'probably cuddling my cat right now.',
+  'based in the Bay Area.',
+  'a product of the Neopets-to-developer pipeline.',
+  'trying to help build a better world.',
+  'accumulating new recipes faster than I can possibly bake them.',
+  'video game completionist.',
+  'pro-pineapples on pizza.',
+  'looking for a job.',
+  'boolProp testingCheatsEnabled true',
+  'passionate about writing clear and thorough documentation.',
+]
+
+let factIdx = 0
+
+// Display different facts about me with button click
+function getFact() {
+  // if factIdx greater than funFacts --> at end of array --> reset factIdx to 0
+  if (factIdx === funFacts.length) {
+    factIdx = 0
+  }
+  // Get fact from array using idx
+  let currentFact = funFacts[factIdx]
+  // Update DOM
+  document.getElementById('intro-blurb').innerText = currentFact
+  // Increase idx
+  factIdx += 1;
+}
+
+document.getElementById('intro-button').addEventListener('click', getFact);
