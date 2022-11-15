@@ -213,6 +213,33 @@ p {
     display: none;
 }
 
+/* TYPING TEXT ANIMATION */
+
+span.typed-text {
+    font-weight: normal;
+    color: var(--main-text);
+}
+
+span.cursor {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0%  { background-color:  var(--secondary-color); }
+    49% { background-color:  var(--secondary-color); }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color:  var(--secondary-color); }
+}
+
 /* LINKS */
 a {
     color: inherit;
