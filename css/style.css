@@ -47,8 +47,12 @@ nav {
     top: 0;
     width: 100%;
     background-color: var(--background-color);
-    padding: 1rem 0;
+    padding: 1rem 0.25rem;
     font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav div {
@@ -57,27 +61,38 @@ nav div {
     justify-content: space-around;
     align-items: center;
     padding: 0 0.25rem;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
     nav div {
         justify-content: space-between;
         padding: 0 0.25rem;
+        width: fit-content;
     }
 }
 
 /* NAV LINKS */
 nav a {
     font-size: 1.25rem;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0.5rem;
     margin: 0 .5rem;
     background-color: inherit;
     text-decoration: underline wavy var(--background-color);
     transition: 0.5s;
 }
 
+/* For very small screens */
+@media only screen and (max-width: 375px) {
+    nav a {
+        font-size: 1.125rem;
+        margin: 0 .325rem;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     nav a {
+        padding: 0.75rem 1rem;
         margin: 0 1rem;
     }
 }
@@ -93,7 +108,17 @@ nav a:hover {
 
 @media only screen and (min-width: 768px) {
     #nav-name {
-        display: inherit;
+        display: block;
+    }
+}
+
+#nav-house {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    #nav-house {
+        display: none;
     }
 }
 
@@ -105,7 +130,7 @@ main {
 
 @media only screen and (min-width: 768px) {
     main {
-        margin: 0 8rem 6rem;
+        margin: 0 8rem 3rem;
     }
 }
 
@@ -235,11 +260,21 @@ ul.about-items {
 .about-items li:before  {
     content: '\2055';
     padding-right: 8px;
+    vertical-align: middle;
+    font-size: 1rem;
 }
 
 .about-items li {
     margin-bottom: 1rem;
     font-size: 1.25rem;
+}
+
+.about-items li span {
+    vertical-align: middle;
+}
+
+.about-items li span span {
+    vertical-align: baseline;
 }
 
 /* PORTFOLIO */
@@ -334,10 +369,11 @@ input[type=submit] {
     width: fit-content;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: .5rem .75rem;
+    padding: .5rem 1.25rem;
     transition: 0.5s;
     cursor: pointer;
     margin-bottom: 1.25rem;
+    min-width: auto;
 }
 
 input[type=submit]:hover {
@@ -355,7 +391,7 @@ textarea {
 
 /* FOOTER */
 footer {
-    margin: 2rem auto;
+    margin: 0 auto 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
