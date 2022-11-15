@@ -255,9 +255,8 @@ a:hover {
 
 }
 
-.icon-link {
+a i {
     text-decoration: none;
-    transition: 0.5s;
 }
 
 /* INTRO */
