@@ -20,7 +20,7 @@
     --secondary-text: #fff;
     --accent-text: #2f2f2f;
     --background-color: #fff;
-    --border-color: #949494;
+    --border-color: #bbbbbb;
 }
 
 html {
@@ -293,6 +293,7 @@ ul.about-items {
     max-width: 22rem;
 }
 
+/* img ratio should be 4.6:3 */
 .portfolio-item img {
     max-width: 100%;
     height: auto;
