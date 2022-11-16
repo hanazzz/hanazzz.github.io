@@ -45,7 +45,7 @@ const funFacts = [
 ]
 
 // Display different facts about me with button click
-let factIndex = 0
+let factIndex = 1   // Start at 1 because page loads already displaying the first fact
 
 function getFact() {
   // if factIndex greater than funFacts --> at end of array --> reset factIndex to 0
