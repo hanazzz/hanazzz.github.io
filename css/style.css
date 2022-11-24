@@ -13,12 +13,12 @@
 
 :root {
     --primary-color: #D0FF42;
-    --secondary-color: #FF428B;
-    --accent-color: #D8D8F6;
-    --accent-color-darker: #c4c4f0;
+    --secondary-color: #D8D8F6;
+    --secondary-color-darker: #c4c4f0;
+    --accent-color: #FF428B;
     --main-text: #2f2f2f;
-    --secondary-text: #fff;
-    --accent-text: #2f2f2f;
+    --secondary-text: #2f2f2f;
+    --accent-text: #fff;
     --background-color: #FDFDFD;
     --border-color: #bbbbbb;
 }
@@ -98,8 +98,8 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent-text);
-    text-decoration: underline var(--secondary-color) wavy;
+    color: var(--secondary-text);
+    text-decoration: underline var(--accent-color) wavy;
 }
 
 #nav-name {
@@ -201,8 +201,8 @@ p {
 }
 
 .btn:hover {
-    background-color: var(--accent-color);
-    color: var(--accent-text)
+    background-color: var(--secondary-color);
+    color: var(--secondary-text)
 }
 
 .bold {
@@ -222,7 +222,7 @@ span.typed-text {
 
 span.cursor {
     display: inline-block;
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     margin-left: 0.1rem;
     width: 3px;
     animation: blink 1s infinite;
@@ -233,25 +233,25 @@ span.cursor.typing {
 }
 
 @keyframes blink {
-    0%  { background-color:  var(--secondary-color); }
-    49% { background-color:  var(--secondary-color); }
+    0%  { background-color:  var(--accent-color); }
+    49% { background-color:  var(--accent-color); }
     50% { background-color: transparent; }
     99% { background-color: transparent; }
-    100%  { background-color:  var(--secondary-color); }
+    100%  { background-color:  var(--accent-color); }
 }
 
 /* LINKS */
 a {
     color: inherit;
-    text-decoration: underline var(--secondary-color) wavy;
-    -webkit-text-decoration: underline var(--secondary-color) wavy;
+    text-decoration: underline var(--accent-color) wavy;
+    -webkit-text-decoration: underline var(--accent-color) wavy;
     text-underline-offset: 4px;
     transition: 0.5s;
 }
 
 a:hover {
-    text-decoration: underline var(--accent-color) wavy;
-    -webkit-text-decoration: underline var(--accent-color) wavy;
+    text-decoration: underline var(--secondary-color) wavy;
+    -webkit-text-decoration: underline var(--secondary-color) wavy;
 
 }
 
@@ -394,15 +394,15 @@ ul.technologies {
 .technologies li {
     display: inline-block;
     list-style: none;
-    background-color: var(--accent-color);
-    color: var(--accent-text);
+    background-color: var(--secondary-color);
+    color: var(--secondary-text);
     padding: .25rem;
     margin: .25rem;
     transition: 0.3s;
 }
 
 .technologies li:hover {
-    background-color: var(--accent-color-darker);
+    background-color: var(--secondary-color-darker);
 }
 
 /* CONTACT FORM */
@@ -481,5 +481,5 @@ footer a {
 
 footer a:hover {
     /* background-color: var(--primary-color); */
-    color: var(--secondary-color)
+    color: var(--accent-color)
 }
