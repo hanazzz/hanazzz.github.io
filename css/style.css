@@ -358,10 +358,16 @@ ul.about-items {
 }
 
 /* img ratio should be 4.6:3 */
-.portfolio-item img {
+.portfolio-img {
     max-width: 100%;
     height: auto;
     border: var(--border-color) solid 1px;
+    transition: 0.4s;
+}
+
+.portfolio-img:hover {
+    opacity: 0.9;
+    filter: brightness(85%);
 }
 
 .portfolio-item p {
