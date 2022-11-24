@@ -457,7 +457,7 @@ textarea {
 
 /* FOOTER */
 footer {
-    margin: 0 auto;
+    margin: 0 auto .5rem;
 }
 
 .footer-links {
