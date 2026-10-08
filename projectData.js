@@ -1,5 +1,6 @@
 const placeholderProject = {
-    projectURL: "",
+    githubURL: "",
+    liveURL: "",
     imgURL: "images/portfolio-placeholder.png",
     imgAlt: "Placeholder image with the text 'tbd'",
     title: "My next project",
@@ -10,7 +11,8 @@ const placeholderProject = {
 };
 
 const projectSpaceData = {
-    projectURL: "https://github.com/hanazzz/spectacular-space-adventure",
+    githubURL: "https://github.com/hanazzz/spectacular-space-adventure",
+    liveURL: "",
     imgURL: "images/portfolio-space.png",
     imgAlt: "A terminal window with text from The Spectacular Space Adventure",
     title: "The Spectacular Space Adventure",
@@ -21,7 +23,8 @@ const projectSpaceData = {
 };
 
 const projectBitBuddyData = {
-    projectURL: "https://github.com/hanazzz/virtual-pet-app",
+    githubURL: "https://github.com/hanazzz/virtual-pet-app",
+    liveURL: "https://bitbuddy.hanazait.com/",
     imgURL: "images/portfolio-bitbuddy.png",
     imgAlt: "A pet on the BitBuddy website",
     title: "BitBuddy",
@@ -32,7 +35,8 @@ const projectBitBuddyData = {
 };
 
 const projectPettingFarmSimData = {
-    projectURL: "https://github.com/hanazzz/petting-farm-game",
+    githubURL: "https://github.com/hanazzz/petting-farm-game",
+    liveURL: "",
     imgURL: "images/portfolio-petting-farm-sim.gif",
     imgAlt: "A short gameplay clip",
     title: "Petting Farm Sim",
@@ -43,7 +47,8 @@ const projectPettingFarmSimData = {
 };
 
 const projectToDoAppData = {
-    projectURL: "https://github.com/hanazzz/full-stack-todo-app",
+    githubURL: "https://github.com/hanazzz/full-stack-todo-app",
+    liveURL: "",
     imgURL: "images/portfolio-todo-app.png",
     imgAlt: "Screenshot of the app with a to do list displayed",
     title: "[In Progress] To-Do List App",

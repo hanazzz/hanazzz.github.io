@@ -10,7 +10,8 @@ class PortfolioItem {
     
     // Creates an instance of PortfolioItem
         constructor(
-            projectURL = "",
+            githubURL = "",
+            liveURL = "",
             imgURL = "images/portfolio-placeholder.png",
             imgAlt = "Placeholder image with the text 'tbd'",
             title = "My next project",
@@ -19,7 +20,8 @@ class PortfolioItem {
             blurb = null,
             description = "Check back later to see what's next!"
         ) {
-            this.projectURL = projectURL;
+            this.githubURL = githubURL;
+            this.liveURL = liveURL;
             this.imgURL = imgURL;
             this.imgAlt = imgAlt;
             this.title = title;
