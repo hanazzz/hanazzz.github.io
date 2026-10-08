@@ -1,3 +1,9 @@
+// Import project data
+import { placeholderProject, projectSpaceData, projectBitBuddyData, projectPettingFarmSimData, projectToDoAppData } from "./projectData.js";
+
+// Store all project data in an array
+const allProjectData = [placeholderProject, projectSpaceData, projectBitBuddyData, projectPettingFarmSimData, projectToDoAppData];
+
 
 // Represents a project in the portfolio
 class PortfolioItem {
@@ -33,25 +39,38 @@ class PortfolioItem {
 }
 
 // FOR TESTING: Data for a project to display in portfolio
-const projectSpaceData = {
-    projectURL: "https://github.com/hanazzz/spectacular-space-adventure",
-    imgURL: "images/portfolio-space.png",
-    imgAlt: "A terminal window with text from The Spectacular Space Adventure",
-    title: "The Spectacular Space Adventure",
-    creationDate: "Jan 2022",
-    technologies: ["Python", "CLI"],
-    blurb: "Command line game written in Python.",
-    description: "Make your way through space as you attempt to meet up with your friend on another planet.",
-    objectName: "projectSpaceName"
-};
+// const projectSpaceData = {
+//     projectURL: "https://github.com/hanazzz/spectacular-space-adventure",
+//     imgURL: "images/portfolio-space.png",
+//     imgAlt: "A terminal window with text from The Spectacular Space Adventure",
+//     title: "The Spectacular Space Adventure",
+//     creationDate: "Jan 2022",
+//     technologies: ["Python", "CLI"],
+//     blurb: "Command line game written in Python.",
+//     description: "Make your way through space as you attempt to meet up with your friend on another planet.",
+//     objectName: "projectSpaceName"
+// };
 
-// FOR TESTING: Create instance using default field values
-const projectPlaceholder = new PortfolioItem();
+// // FOR TESTING: Create instance using default field values
+// const projectPlaceholder = new PortfolioItem();
 
-// FOR TESTING: Create instsance using project data (from projectSpaceData)
-const projectSpace = PortfolioItem.from(projectSpaceData);
+// // FOR TESTING: Create instsance using project data (from projectSpaceData)
+// const projectSpace = PortfolioItem.from(projectSpaceData);
+
+// // FOR TESTING: Print to console to test results
+// console.log(projectPlaceholder)
+// console.log("-------")
+// console.log(projectSpace)
+
+// Creates an instance for each portfolio project using an array (allProjectData)
+// Returns an array containing all the instances
+function createProjects() {
+    return allProjectData.map(proj => PortfolioItem.from(proj));
+}
+
+// Create and store array of project instances
+const allProjects = createProjects();
 
 // FOR TESTING: Print to console to test results
-console.log(projectPlaceholder)
-console.log("-------")
-console.log(projectSpace)
+console.log("Printing all projects");
+console.log(allProjects);
