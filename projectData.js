@@ -13,7 +13,7 @@ const projectToDoAppData = {
     imgAlt: "Screenshot of the app with a to do list displayed",
     title: "[In Progress] To-Do List App",
     creationDate: "Oct 2026",
-    technologies: ["PHP", "JavaScript", "MySQL", "CSS"],
+    technologies: ["PHP", "JavaScript", "MySQL", "Tailwind CSS"],
     blurb: "Full-stack web app.",
     description: "A simple to-do list web application."
 };
