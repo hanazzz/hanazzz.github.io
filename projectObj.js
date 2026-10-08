@@ -64,7 +64,7 @@ export class PortfolioItem {
         // Puts each technology from the array into an <li> element and creates an array of all these elements
         .map(tech => `<li>${tech}</li>`)
         // Joins the array items together into one long string
-        .join("");
+        .join("\n");
     }
 
 

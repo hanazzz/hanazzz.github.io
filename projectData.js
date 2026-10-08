@@ -69,6 +69,6 @@ const placeholderProject = {
 
 
 // Store all project data in an array
-const allProjectData = [projectToDoAppData, projectPettingFarmSimData, projectPettingFarmSimData, projectBitBuddyData, projectSpaceData, placeholderProject ];
+const allProjectData = [projectToDoAppData, projectPettingFarmSimData, projectBitBuddyData, projectSpaceData, placeholderProject ];
 
 export { allProjectData }
