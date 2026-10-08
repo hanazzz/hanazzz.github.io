@@ -1,3 +1,38 @@
+import { PortfolioItem, createProjects } from "./projectObj.js";
+import { allProjectData } from "./projectData.js";
+
+
+
+
+/**
+ * ==========================================
+ * PORTFOLIO PROJECTS DYNAMIC HTML
+ * ==========================================
+ */
+
+// Create instances for each project and store all instances as an array
+const portfolioItems = createProjects(allProjectData);
+
+const portfolioItemsHTML = portfolioItems.map(item => item.toHTML()).join("");
+
+// Get the portfolio div that will contain all projects
+const portfolioContainer = document.getElementById("portfolio-container");
+
+/* Confirm that the portfolio div exists (to prevent website from breaking)
+If div exists, insert HTML blocks for all projects */
+if (portfolioContainer) {
+    portfolioContainer.innerHTML = portfolioItemsHTML
+}
+
+
+
+
+/**
+ * ==========================================
+ * CONTACT FORM HANDLING
+ * ==========================================
+ */
+
 // Send email from contact form
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -29,7 +64,16 @@ window.onload = function() {
   });
 }
 
-// Button with info about me
+
+
+
+/**
+ * ==========================================
+ * FUN FACTS BUTTON
+ * ==========================================
+ */
+
+// Store all facts as strings in an array
 const funFacts = [
   'full-stack software engineer.',
   'probably cuddling my cat right now.',
