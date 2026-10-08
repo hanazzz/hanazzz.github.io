@@ -1,5 +1,17 @@
-// Represents a project in the portfolio
-class PortfolioItem {
+/**
+ * Exports:
+ * - {class} PortfolioItem - Represents a single portfolio project.
+ * - {function} createProjects - Uses array of data to output an array of PortfolioItem instances.
+ */
+
+
+
+/**
+ * Represents a project in the portfolio
+ * @export
+ * @class PortfolioItem
+ */
+export class PortfolioItem {
     
     // Creates an instance of PortfolioItem
     constructor(
@@ -27,14 +39,25 @@ class PortfolioItem {
         console.log("----- PortfolioItem instance created -----")
     }
 
-    // Builds the instance from existing data (passed in as object)
+
+    /**
+     * Builds the PortfolioItem instance from existing data (passed in as object)
+     * @static
+     * @param {Object} data
+     * @returns {Object} A PortfolioItem instance
+     * @memberof PortfolioItem
+     */
     static from(data) {
         return Object.assign(new(PortfolioItem), data)
     }
 
-    /* Converts the technologies array into <li> elements and conjoins them
-    @returns {string}  a string of all the <lI> elements
-    e.g. "<li>JavaScript</li><li>Python</li>" */
+
+    /**
+     * Converts an instance's technologies array into HTML and conjoins them
+     * @returns {string} A string of all the <lI> elements
+     * (e.g. "`<li>JavaScript</li><li>Python</li>`")
+     * @memberof PortfolioItem
+     */
     #technologiesToHTML() {
         // Uses the array of technologies stored on the instance
         return this.technologies
@@ -44,8 +67,12 @@ class PortfolioItem {
         .join("");
     }
 
-    /* TO DO: ADD DOCUMENTATION
-    @returns */
+
+    /**
+     * Converts any of an instance's links (if any) into HTML and conjoins them
+     * @returns {string} A string of HTML containing the instance's links
+     * @memberof PortfolioItem
+     */
    #linksToHTML() {
         // Create variable to store project links as HTML
         let linksHTML = "";
@@ -63,7 +90,12 @@ class PortfolioItem {
         return linksHTML
    }
 
-    // Generates the HTML block for this project instance
+    
+    /**
+     * Generates the HTML block for this project instance
+     * @return {string} HTML block for the project
+     * @memberof PortfolioItem
+     */
     toHTML() {
 
         let technologiesHTML = this.#technologiesToHTML();
@@ -92,34 +124,12 @@ class PortfolioItem {
     }
 }
 
-// FOR TESTING: Data for a project to display in portfolio
-// const projectSpaceData = {
-//     projectURL: "https://github.com/hanazzz/spectacular-space-adventure",
-//     imgURL: "images/portfolio-space.png",
-//     imgAlt: "A terminal window with text from The Spectacular Space Adventure",
-//     title: "The Spectacular Space Adventure",
-//     creationDate: "Jan 2022",
-//     technologies: ["Python", "CLI"],
-//     blurb: "Command line game written in Python.",
-//     description: "Make your way through space as you attempt to meet up with your friend on another planet.",
-//     objectName: "projectSpaceName"
-// };
-
-// // FOR TESTING: Create instance using default field values
-// const projectPlaceholder = new PortfolioItem();
-
-// // FOR TESTING: Create instsance using project data (from projectSpaceData)
-// const projectSpace = PortfolioItem.from(projectSpaceData);
-
-// // FOR TESTING: Print to console to test results
-// console.log(projectPlaceholder)
-// console.log("-------")
-// console.log(projectSpace)
-
-// Creates an instance for each portfolio project using an array (allProjectData)
-// Returns an array containing all the instances
-function createProjects(allProjectData) {
+/**
+ *
+ * Creates an instance for each portfolio project using an array
+ * @param {array} allProjectData An array of objects, with each object representing one project's data
+ * @returns {Array.<PortfolioItem>} An array containing all the PortfolioItem instances
+ */
+export function createProjects(allProjectData) {
     return allProjectData.map(proj => PortfolioItem.from(proj));
 }
-
-export { PortfolioItem, createProjects }
