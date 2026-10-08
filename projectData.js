@@ -5,7 +5,7 @@ const placeholderProject = {
     imgAlt: "Placeholder image with the text 'tbd'",
     title: "My next project",
     creationDate: "Coming soon",
-    technologies: "TBD",
+    technologies: ["TBD"],
     blurb: null,
     description: "Check back later to see what's next!"
 };
@@ -58,4 +58,8 @@ const projectToDoAppData = {
     description: "A simple to-do list web application."
 };
 
-export { placeholderProject, projectSpaceData, projectBitBuddyData, projectPettingFarmSimData, projectToDoAppData };
+
+// Store all project data in an array
+const allProjectData = [placeholderProject, projectSpaceData, projectBitBuddyData, projectPettingFarmSimData, projectToDoAppData];
+
+export { allProjectData }
