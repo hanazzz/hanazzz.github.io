@@ -5,13 +5,16 @@
  * ==========================================
  */
 
+// NOTE: Preferred image ratio: 3:2
+// NOTE: After adding project data, update array of projects at end of file
+
 
 const projectToDoAppData = {
     githubURL: "https://github.com/hanazzz/full-stack-todo-app",
-    liveURL: "",
+    liveURL: "http://todo-demo.hanazait.com/",
     imgURL: "images/portfolio-todo-app.png",
     imgAlt: "Screenshot of the app with a to do list displayed",
-    title: "[In Progress] To-Do List App",
+    title: "To-Do List App",
     creationDate: "Oct 2026",
     technologies: ["PHP", "JavaScript", "MySQL", "Tailwind CSS"],
     blurb: "Full-stack web app.",
@@ -42,33 +45,9 @@ const projectBitBuddyData = {
     description: "A virtual pet app inspired by digital pet games from the early/mid 2000s, but with a modern twist: AI."
 };
 
-const projectSpaceData = {
-    githubURL: "https://github.com/hanazzz/spectacular-space-adventure",
-    liveURL: "",
-    imgURL: "images/portfolio-space.png",
-    imgAlt: "A terminal window with text from The Spectacular Space Adventure",
-    title: "The Spectacular Space Adventure",
-    creationDate: "Jan 2022",
-    technologies: ["Python", "CLI"],
-    blurb: "Command line game written in Python.",
-    description: "Make your way through space as you attempt to meet up with your friend on another planet."
-};
-
-const placeholderProject = {
-    githubURL: "",
-    liveURL: "",
-    imgURL: "images/portfolio-placeholder.png",
-    imgAlt: "Placeholder image with the text 'tbd'",
-    title: "My next project",
-    creationDate: "Coming soon",
-    technologies: ["TBD"],
-    blurb: null,
-    description: "Check back later to see what's next!"
-};
-
 
 
 // Store all project data in an array
-const allProjectData = [projectToDoAppData, projectPettingFarmSimData, projectBitBuddyData, projectSpaceData, placeholderProject ];
+const allProjectData = [projectToDoAppData, projectPettingFarmSimData, projectBitBuddyData ];
 
 export { allProjectData }
