@@ -79,13 +79,12 @@ const funFacts = [
   'probably cuddling my cat right now.',
   'based in the Bay Area.',
   'a product of the Neopets-to-developer pipeline.',
-  'trying to help build a better world.',
-  'accumulating new recipes faster than I can possibly bake them.',
-  'video game completionist.',
-  'pro-pineapples on pizza.',
-  'looking for a job.',
+  'currently building a side project with Node.js and the Spotify API.',
+  'coding to a soundtrack of trance music.',
+  'perpetually testing out new baking recipes.',
+  'prone to video game completionist tendencies.',
+  'armed with a passion for clear docs after years of writing user guides and SOPs.',
   'boolProp testingCheatsEnabled true',
-  'passionate about writing clear and thorough documentation.',
 ]
 
 // Display different facts about me with button click
