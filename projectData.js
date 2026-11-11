@@ -23,14 +23,26 @@ const projectToDoAppData = {
 
 const projectPettingFarmSimData = {
     githubURL: "https://github.com/hanazzz/petting-farm-game",
-    liveURL: "",
-    imgURL: "images/portfolio-petting-farm-sim.gif",
+    liveURL: "https://hanazzz.itch.io/petting-farm-sim",
+    imgURL: "images/portfolio-petting-farm-sim.png",
     imgAlt: "A short gameplay clip",
     title: "Petting Farm Sim",
     creationDate: "Nov 2025",
     technologies: ["GDScript"],
     blurb: "Game made using Godot.",
     description: "A mellow 2D top-down petting farm game."
+};
+
+const projectFirstPlatformerData = {
+    githubURL: "https://github.com/hanazzz/2d-platformer-game",
+    liveURL: "https://hanazzz.itch.io/my-first-platformer",
+    imgURL: "images/portfolio-platformer.png",
+    imgAlt: "A short gameplay clip",
+    title: "My First Godot Game",
+    creationDate: "Oct 2025",
+    technologies: ["GDScript"],
+    blurb: "Game made using Godot.",
+    description: "A simple 2D platformer."
 };
 
 const projectBitBuddyData = {
@@ -42,12 +54,12 @@ const projectBitBuddyData = {
     creationDate: "Oct 2022",
     technologies: ["Python", "JavaScript", "React", "PostgreSQL", "SQLAlchemy", "Flask", "Tailwind CSS"],
     blurb: "Full-stack web app.",
-    description: "A virtual pet app inspired by digital pet games from the early/mid 2000s, but with a modern twist: AI."
+    description: "A virtual pet app inspired by digital pet games from the early/mid 2000s, but with a modern twist."
 };
 
 
 
 // Store all project data in an array
-const allProjectData = [projectToDoAppData, projectPettingFarmSimData, projectBitBuddyData ];
+const allProjectData = [projectToDoAppData, projectPettingFarmSimData, projectFirstPlatformerData, projectBitBuddyData ];
 
 export { allProjectData }
